@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css"  href="Thech.css">
+
+    <title>
+      The_JS_Challenge.
+    </title>
+  </head>
+<body>
+    <div id="body">
+        <div id="s_body">
+    <div class = "colours">  
+    <div id = "Blue"><a href = "" style="text-decoration: none; color: black;">"Blue" in h3</a></div>
+    <div id = "Green"><a href=""style="text-decoration: none; color: black"> "Green" in h3</a></div>
+    <div id = "Red"><a href="" style="text-decoration: none; color: black">"Red" in h3</a></div>
+    </div>    
+        
+    <div class="Box">   
+    <p class="selected_color">
+      box that will be fiiled with the selected colour
+    </p>
+    <p class="text">
+      Text will come here
+    </p>
+    <p class="calc.">
+      Calculations
+    </p>
+    </div>
+    <script>
+        var Blue = document.getElementById("Blue");
+        var Green = document.getElementById("Green");
+        var Red = document.getElementById("Red");
+        var text = document.getElementsByClassName("text")[0];
+        var selected = document.getElementsByClassName("selected_color")[0];
+        var calculation = document.getElementsByClassName("calc.")[0];
+        Blue.onclick = function(){
+            selected.className = "selected_color_Blue";
+            text.innerHTML= "Hi, my name is Blue.";
+            selected.innerHTML = "";
+            calculation.innerHTML = "The ASCII code is 392.";
+            return false;
+        };
+        Green.onclick = function(){
+            selected.className="selected_color_Green";
+            text.innerHTML = "Hi, my name is Green.";
+            calculation.innerHTML = "The ASCII code is 497.";
+            return false;
+        };
+        Red.onclick = function(){
+            selected.className = "selected_color_Red";
+            text.innerHTML = "Hi, my name is Red.";
+            calculation.innerHTML = "The ASCII code is 283.";
+            return false;
+        };
+        
+    </script>
+     </div>   
+    </div>
+
+</body>
+</html>
